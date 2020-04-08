@@ -16,11 +16,11 @@ function sockMerchant($n, $ar) {
            }
        }
    } else {
-       return 'empty array';
+       return ['empty'];
    }
     return $count;
 }
 
-$socks = $socks = [10, 20, 20, 10, 10, 30, 50, 10, 20,10, 20, 20, 10, 10, 30, 50, 10, 20,10, 20, 20, 10, 10, 30, 50,];
+$socks = [];
 $n     = count($socks);
 print_r(sockMerchant($n, $socks));
